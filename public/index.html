@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prontuário Eletrônico - IAgnóstico</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        text-align: center;
+        color: #00ff88;
+      }
+
+      form {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        resize: vertical;
+      }
+
+      button {
+        margin-top: 2rem;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        background-color: #00ff88;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Prontuário Eletrônico</h1>
+
+    <form id="form-prontuario">
+      <label for="queixa">Queixa Principal:</label>
+      <textarea id="queixa"></textarea>
+
+      <label for="contexto">Contexto Clínico:</label>
+      <textarea id="contexto"></textarea>
+
+      <label for="sintomas">Sintomas:</label>
+      <textarea id="sintomas"></textarea>
+
+      <label for="exames">Exames Realizados:</label>
+      <textarea id="exames"></textarea>
+
+      <button type="submit">Salvar</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("form-prontuario")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const prontuario = {
+            queixaPrincipal: document.getElementById("queixa").value,
+            contextoClinico: document.getElementById("contexto").value,
+            sintomas: document.getElementById("sintomas").value,
+            examesRealizados: document.getElementById("exames").value,
+          };
+
+          fetch("http://localhost:3001/prontuario", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(prontuario),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              alert("Prontuário salvo com sucesso!");
+              console.log(data);
+            })
+            .catch((err) => {
+              console.error("Erro ao enviar prontuário:", err);
+              alert("Erro ao enviar o prontuário.");
+            });
+        });
+    </script>
+  </body>
+</html>

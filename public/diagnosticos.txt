@@ -1,0 +1,60 @@
+################ CASO CARDÍACO ##############
+
+QUEIXA PRINCIPAL: Dor no peito ao esforço.
+CONTEXTO CLÍNICO: Homem de 56 anos, hipertenso, tabagista.
+SINTOMAS: Dor torácica em aperto irradiando para braço esquerdo, falta de ar ao subir escadas.
+EXAMES REALIZADOS: ECG com infradesnivelamento de ST, colesterol elevado.
+
+@@@ Diagnóstico sugerido(IAgnóstico) @@@
+
+PRINCIPAL: Angina instável (85% de confiança).
+
+ALTERNATIVAS:
+    - Infarto agudo do miocárdio (65%).
+    - Refluxo gastroesofágico (25%).
+
+
+################ CASO ORTOPÉDICO #############
+
+QUEIXA PRINCIPAL: Dor no joelho direito
+CONTEXTO CLÍNICO: Mulher de 43 anos, corredora de rua, aumento progressivo de dor após treinos.
+SINTOMAS: Dor ao subir escadas, rigidez matinal leve, estalos no joelho.
+EXAMES REALIZADOS: Ressonância magnética mostra desgaste da cartilagem.
+
+@@@ Diagnóstico sugerido(IAgnóstico) @@@
+
+PRINCIPAL: Condromalácia patelar (78% de confiança).
+
+ALTERNATIVAS:
+    - Osteoartrite incipiente (50%).
+    - Lesão meniscal (40%).
+
+################ CASO NEUROLÓGICO ############
+
+QUEIXA PRINCIPAL: Crises de convulsão recorrentes.
+CONTEXTO CLÍNICO: Jovem de 24 anos, histórico familiar de epilepsia.
+SINTOMAS: Crises tônico-clônicas, perda de consciência, episódios frequentes nos últimos 3 meses.
+EXAMES REALIZADOS: EEG com atividade epileptiforme no lobo temporal.
+
+@@@ Diagnóstico sugerido(IAgnóstico) @@@
+
+PRINCIPAL: Epilepsia do lobo temporal (90% de confiança).
+
+ALTERNATIVAS:
+    - Crise não epiléptica psicogênica (40%).
+    - Hipoglicemia reativa (30%).
+
+################ CASO ENDÓCRINO ##############
+
+QUEIXA PRINCIPAL: Cansaço excessivo e perda de peso.
+CONTEXTO CLÍNICO: Mulher de 35 anos, sem comorbidades prévias.
+SINTOMAS: Taquicardia, intolerância ao calor, nervosismo
+EXAMES REALIZADOS: TSH suprimido, T4 livre aumentado.
+
+@@@ Diagnóstico sugerido(IAgnóstico) @@@
+
+PRINCIPAL: Hipertireoidismo (Doença de Graves) (88% de confiança).
+
+ALTERNATIVAS:
+    - Bócio multinodular tóxico (60%).
+    - Tireoidite subaguda (35%).
