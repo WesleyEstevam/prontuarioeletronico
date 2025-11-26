@@ -86,7 +86,7 @@
             examesRealizados: document.getElementById("exames").value,
           };
 
-          fetch("http://localhost:3001/prontuario", {
+          fetch("https://prontuario-iagnostico.vercel.app/prontuario", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(prontuario),
